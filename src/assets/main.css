@@ -1,0 +1,63 @@
+@import './base.css';
+
+#app {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 4rem;
+}
+
+/* #pag {
+  width 
+} */
+
+
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .col {
+    float: left;
+    width: 33.33%;
+    padding: 0 15px;
+  }
+}
